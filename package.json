@@ -1,0 +1,51 @@
+{
+  "name": "trezy-studios-bot",
+  "description": "An API for bsky interactions.",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "BSD-3-Clause",
+  "type": "module",
+  "private": true,
+  "packageManager": "yarn@4.0.2",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config src/index.js",
+    "lint": "eslint ./src/",
+    "start": "node -r dotenv/config src/index.js"
+  },
+  "dependencies": {
+    "@koa/cors": "^5.0.0",
+    "@trezy-studios/koa-api": "^1.0.11",
+    "dotenv": "^16.3.1",
+    "koa": "^2.15.0",
+    "koa-body": "^6.0.1",
+    "koa-compress": "^5.1.1",
+    "koa-no-trailing-slash": "^2.1.0",
+    "koa-router": "^12.0.1",
+    "prom-client": "^15.1.0",
+    "winston": "^3.11.0",
+    "winston-loki": "^6.0.8"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.12",
+    "@types/koa-compress": "^4.0.6",
+    "@types/koa-router": "^7.4.8",
+    "@types/koa__cors": "^5.0.0",
+    "@types/node": "^20.10.6",
+    "better-docs": "^2.7.3",
+    "eslint": "^8.56.0",
+    "eslint-plugin-editorconfig": "^4.0.3",
+    "eslint-plugin-jsdoc": "^46.10.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-optimize-regex": "^1.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-perf": "^3.3.1",
+    "eslint-plugin-react-prefer-function-component": "^3.3.0",
+    "eslint-plugin-security": "^2.1.0",
+    "eslint-plugin-sort-class-members": "^1.19.0",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "nodemon": "^3.0.2",
+    "typescript": "^5.3.3"
+  }
+}
